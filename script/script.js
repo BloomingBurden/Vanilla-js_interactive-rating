@@ -19,14 +19,17 @@ class App {
             setTimeout(() => elem.innerHTML = tmp, 3000);
         }
         
-
         this._elem.classList.add('rating--new');
+        this.ratingHtml = this._elem.innerHTML;
+        
         this._elem.innerHTML = `
         <h2 class="rating--new__title">
           Thank you!
         </h2>
         <p class="rating__result"><span>You selected <span class="rating__change">5</span> out of 5</span></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tenetur nisi modi mollitia quis earum at culpa corporis obcaecati eligendi natus molestias similique, aliquid qui alias voluptatem delectus quia suscipit?</p>`
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</p>`;
+
         document.querySelector('.rating__change').textContent = this.current;
     }
 

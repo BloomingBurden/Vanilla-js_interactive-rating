@@ -31,7 +31,7 @@ a {
 
 img {
   height: auto;
-  max-width: 100%:
+  max-width: 100%;
 }
 
 ul {
@@ -41,21 +41,23 @@ ul {
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  width: 1440px;
+  min-width: 420px;
+  max-width: 1440px;
 }
 
 .rating,
 .rating__new {
-  position: fixed;
+  position: relative;
   width: 410px;
   min-height: 420px;
-  left: 50%;
-  top: 50%;
   padding-top: 110px;
   padding-left: 25px;
   padding-right: 40px;
-  transform: translate(-50%, -50%);
   
   background-color: var(--dark-blue);
   border-radius: 35px;

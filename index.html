@@ -8,6 +8,12 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
 
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -16,34 +22,36 @@
 </head>
 <body>
 
-  <!-- Rating state start -->
+  <main class="container">
+    <article class="rating">
+      <h2 class="rating__title">How did we do?</h2>
+      <p class="rating__text">Please let us know how we did with your support request. All feedback is appreciated to help us to improve our offering</p>
+      <ul class="rating__list">
+        <li class="rating__item">
+          <a href="#" data-action="select">1</a>
+        </li>
+        <li class="rating__item">
+          <a href="#" data-action="select">2</a>
+        </li>
+        <li class="rating__item">
+          <a href="#" data-action="select">3</a>
+        </li>
+        <li class="rating__item">
+          <a href="#" data-action="select">4</a>
+        </li>
+        <li class="rating__item">
+          <a href="#" data-action="select">5</a>
+        </li>
+      </ul>
+      <button class="rating__submit" type="submit" data-action="send">Submit</button>
+    </article>
 
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/BloomingBurden">BloomingBurden</a>.
+    </div>
+  </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="script/script.js"></script>
 </body>
 </html>
